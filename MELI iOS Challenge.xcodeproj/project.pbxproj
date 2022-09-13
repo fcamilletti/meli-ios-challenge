@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D417785456BC64DBA67D025 /* Pods_MELI_iOS_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206A8A41BA208E4F44588030 /* Pods_MELI_iOS_ChallengeTests.framework */; };
 		6634476328D096F800135F28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634476228D096F800135F28 /* AppDelegate.swift */; };
 		6634476528D096F800135F28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634476428D096F800135F28 /* SceneDelegate.swift */; };
 		6634476728D096F800135F28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634476628D096F800135F28 /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		6634477A28D096FB00135F28 /* MELI_iOS_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634477928D096FB00135F28 /* MELI_iOS_ChallengeTests.swift */; };
 		6634478428D096FB00135F28 /* MELI_iOS_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634478328D096FB00135F28 /* MELI_iOS_ChallengeUITests.swift */; };
 		6634478628D096FB00135F28 /* MELI_iOS_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634478528D096FB00135F28 /* MELI_iOS_ChallengeUITestsLaunchTests.swift */; };
+		E7E8E7123F306EA3395F567B /* Pods_MELI_iOS_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E612E22BD5189DB19626B3D8 /* Pods_MELI_iOS_Challenge.framework */; };
+		EFE5952A24E78B17B9F3E238 /* Pods_MELI_iOS_Challenge_MELI_iOS_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE07A3D2A41B36E0145DDB7 /* Pods_MELI_iOS_Challenge_MELI_iOS_ChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		015EEC9DB86FBCBD619707F8 /* Pods-MELI iOS ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELI iOS ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-MELI iOS ChallengeTests/Pods-MELI iOS ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		141072649EE7D88627A51BB0 /* Pods-MELI iOS Challenge-MELI iOS ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELI iOS Challenge-MELI iOS ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-MELI iOS Challenge-MELI iOS ChallengeUITests/Pods-MELI iOS Challenge-MELI iOS ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		206A8A41BA208E4F44588030 /* Pods_MELI_iOS_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MELI_iOS_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2095AED0D4F7AF71CC858E72 /* Pods-MELI iOS Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELI iOS Challenge.debug.xcconfig"; path = "Target Support Files/Pods-MELI iOS Challenge/Pods-MELI iOS Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		49F372925E204EBB44CE753F /* Pods-MELI iOS Challenge-MELI iOS ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELI iOS Challenge-MELI iOS ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-MELI iOS Challenge-MELI iOS ChallengeUITests/Pods-MELI iOS Challenge-MELI iOS ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4FE07A3D2A41B36E0145DDB7 /* Pods_MELI_iOS_Challenge_MELI_iOS_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MELI_iOS_Challenge_MELI_iOS_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6634475F28D096F800135F28 /* MELI iOS Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MELI iOS Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6634476228D096F800135F28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6634476428D096F800135F28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		6634477F28D096FB00135F28 /* MELI iOS ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MELI iOS ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6634478328D096FB00135F28 /* MELI_iOS_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELI_iOS_ChallengeUITests.swift; sourceTree = "<group>"; };
 		6634478528D096FB00135F28 /* MELI_iOS_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELI_iOS_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6AC14692C069D9B51498150F /* Pods-MELI iOS Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELI iOS Challenge.release.xcconfig"; path = "Target Support Files/Pods-MELI iOS Challenge/Pods-MELI iOS Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		E612E22BD5189DB19626B3D8 /* Pods_MELI_iOS_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MELI_iOS_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F949A3936318B71A08BDCACD /* Pods-MELI iOS ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELI iOS ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-MELI iOS ChallengeTests/Pods-MELI iOS ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7E8E7123F306EA3395F567B /* Pods_MELI_iOS_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D417785456BC64DBA67D025 /* Pods_MELI_iOS_ChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE5952A24E78B17B9F3E238 /* Pods_MELI_iOS_Challenge_MELI_iOS_ChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				6634477828D096FB00135F28 /* MELI iOS ChallengeTests */,
 				6634478228D096FB00135F28 /* MELI iOS ChallengeUITests */,
 				6634476028D096F800135F28 /* Products */,
+				824EB706FEFEC519FD69F0C6 /* Pods */,
+				992539D3F2315106E5D81443 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +141,30 @@
 			path = "MELI iOS ChallengeUITests";
 			sourceTree = "<group>";
 		};
+		824EB706FEFEC519FD69F0C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2095AED0D4F7AF71CC858E72 /* Pods-MELI iOS Challenge.debug.xcconfig */,
+				6AC14692C069D9B51498150F /* Pods-MELI iOS Challenge.release.xcconfig */,
+				49F372925E204EBB44CE753F /* Pods-MELI iOS Challenge-MELI iOS ChallengeUITests.debug.xcconfig */,
+				141072649EE7D88627A51BB0 /* Pods-MELI iOS Challenge-MELI iOS ChallengeUITests.release.xcconfig */,
+				F949A3936318B71A08BDCACD /* Pods-MELI iOS ChallengeTests.debug.xcconfig */,
+				015EEC9DB86FBCBD619707F8 /* Pods-MELI iOS ChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		992539D3F2315106E5D81443 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E612E22BD5189DB19626B3D8 /* Pods_MELI_iOS_Challenge.framework */,
+				4FE07A3D2A41B36E0145DDB7 /* Pods_MELI_iOS_Challenge_MELI_iOS_ChallengeUITests.framework */,
+				206A8A41BA208E4F44588030 /* Pods_MELI_iOS_ChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6634478928D096FB00135F28 /* Build configuration list for PBXNativeTarget "MELI iOS Challenge" */;
 			buildPhases = (
+				C0F414488DCEAE9008DD73D0 /* [CP] Check Pods Manifest.lock */,
 				6634475B28D096F800135F28 /* Sources */,
 				6634475C28D096F800135F28 /* Frameworks */,
 				6634475D28D096F800135F28 /* Resources */,
+				C94AD4702729D4B850066885 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6634478C28D096FB00135F28 /* Build configuration list for PBXNativeTarget "MELI iOS ChallengeTests" */;
 			buildPhases = (
+				8FDF417D7C613D6CDB333813 /* [CP] Check Pods Manifest.lock */,
 				6634477128D096FB00135F28 /* Sources */,
 				6634477228D096FB00135F28 /* Frameworks */,
 				6634477328D096FB00135F28 /* Resources */,
@@ -166,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6634478F28D096FB00135F28 /* Build configuration list for PBXNativeTarget "MELI iOS ChallengeUITests" */;
 			buildPhases = (
+				28BF94245E69B2AE41528D67 /* [CP] Check Pods Manifest.lock */,
 				6634477B28D096FB00135F28 /* Sources */,
 				6634477C28D096FB00135F28 /* Frameworks */,
 				6634477D28D096FB00135F28 /* Resources */,
+				5687C27FA45EC9F60C431EEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +294,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28BF94245E69B2AE41528D67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MELI iOS Challenge-MELI iOS ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5687C27FA45EC9F60C431EEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MELI iOS Challenge-MELI iOS ChallengeUITests/Pods-MELI iOS Challenge-MELI iOS ChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MELI iOS Challenge-MELI iOS ChallengeUITests/Pods-MELI iOS Challenge-MELI iOS ChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MELI iOS Challenge-MELI iOS ChallengeUITests/Pods-MELI iOS Challenge-MELI iOS ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FDF417D7C613D6CDB333813 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MELI iOS ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0F414488DCEAE9008DD73D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MELI iOS Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C94AD4702729D4B850066885 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MELI iOS Challenge/Pods-MELI iOS Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MELI iOS Challenge/Pods-MELI iOS Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MELI iOS Challenge/Pods-MELI iOS Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6634475B28D096F800135F28 /* Sources */ = {
@@ -420,6 +569,7 @@
 		};
 		6634478A28D096FB00135F28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2095AED0D4F7AF71CC858E72 /* Pods-MELI iOS Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,6 +598,7 @@
 		};
 		6634478B28D096FB00135F28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AC14692C069D9B51498150F /* Pods-MELI iOS Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -476,6 +627,7 @@
 		};
 		6634478D28D096FB00135F28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F949A3936318B71A08BDCACD /* Pods-MELI iOS ChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +648,7 @@
 		};
 		6634478E28D096FB00135F28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015EEC9DB86FBCBD619707F8 /* Pods-MELI iOS ChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +669,7 @@
 		};
 		6634479028D096FB00135F28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49F372925E204EBB44CE753F /* Pods-MELI iOS Challenge-MELI iOS ChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +688,7 @@
 		};
 		6634479128D096FB00135F28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 141072649EE7D88627A51BB0 /* Pods-MELI iOS Challenge-MELI iOS ChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
