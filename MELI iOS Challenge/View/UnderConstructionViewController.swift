@@ -1,13 +1,13 @@
 //
-//  ProductsListController.swift
+//  UnderConstructionViewController.swift
 //  MELI iOS Challenge
 //
-//  Created by Franco Camilletti on 13/09/2022.
+//  Created by Franco Camilletti on 14/09/2022.
 //
 
 import UIKit
 
-class ProductsListController: UIViewController {
+class UnderConstructionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MeLiProductCell: UITableViewCell {
+class MeliProductCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
