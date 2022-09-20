@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UISearchBarDelegate {
     
     // MARK: - View Code
     
@@ -23,36 +23,51 @@ class HomeViewController: UIViewController {
         return aView
     }()
     
-    private lazy var searchTextField: MeliTextField = {
-        let aTextField = MeliTextField()
-        aTextField.translatesAutoresizingMaskIntoConstraints = false
-        aTextField.icon = UIImage(systemName: "magnifyingglass")
-        return aTextField
-    }()
-    
-    private lazy var cartButton: UIButton = {
-        let aButton = UIButton()
-        aButton.translatesAutoresizingMaskIntoConstraints = false
-        aButton.setImage(UIImage(systemName: "cart"), for: .normal)
+    private lazy var backButton: UIBarButtonItem = {
+        let aButton = UIBarButtonItem()
+        aButton.title = ""
+        aButton.tintColor = .black
+        aButton.style = .plain
         return aButton
     }()
     
+    private lazy var searchBar: UISearchBar = {
+        let aSearchBar = UISearchBar()
+        aSearchBar.delegate = self
+        aSearchBar.searchTextField.backgroundColor = .white
+        aSearchBar.text = "Buscar en Mercado Libre"
+        return aSearchBar
+    }()
+    
+    private lazy var cartButton: UIBarButtonItem = {
+        let aButton = UIBarButtonItem()
+        aButton.image = UIImage(systemName: "cart")
+        aButton.tintColor = .black
+        aButton.style = .done
+        aButton.target = self
+        aButton.action = #selector(onCartBeenPressed)
+        return aButton
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        setupConstraints()
     }
+    
+    //MARK: - View Build
     
     private func setupView() {
         self.view.backgroundColor = .white
         self.view.addSubview(scrollView)
         self.view.addSubview(contentView)
-        self.view.addSubview(searchTextField)
-        self.view.addSubview(cartButton)
+        
+        navigationItem.title = "Enviar a Franco Camilletti - Garibaldi 619"
+        navigationItem.titleView = searchBar
+        navigationItem.rightBarButtonItem = cartButton
+        navigationItem.backBarButtonItem = backButton
+        
+        setupConstraints()
     }
-    
-    //MARK: - View Build
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
@@ -69,22 +84,18 @@ class HomeViewController: UIViewController {
             contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             contentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
             
-            searchTextField.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor),
-            searchTextField.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant:  16),
-            searchTextField.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant:  -56),
-            searchTextField.heightAnchor.constraint(equalToConstant: 48),
-            
-            cartButton.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor),
-            cartButton.leadingAnchor.constraint(equalTo: searchTextField.trailingAnchor, constant: 5),
-            cartButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor,constant: -14),
-            cartButton.heightAnchor.constraint(equalToConstant: 48),
-        ])
-    }
+        ])}
     
     //MARK: - Interactions
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print("Text Did Change to:", searchText)
+    }
     
-    //MARK: - Navigations
+    @objc private func onCartBeenPressed() {
+        let vc = ProductsListViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
 }
 

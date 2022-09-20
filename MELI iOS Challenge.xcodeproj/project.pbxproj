@@ -16,12 +16,12 @@
 		6634477A28D096FB00135F28 /* MELI_iOS_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634477928D096FB00135F28 /* MELI_iOS_ChallengeTests.swift */; };
 		6634478428D096FB00135F28 /* MELI_iOS_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634478328D096FB00135F28 /* MELI_iOS_ChallengeUITests.swift */; };
 		6634478628D096FB00135F28 /* MELI_iOS_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634478528D096FB00135F28 /* MELI_iOS_ChallengeUITestsLaunchTests.swift */; };
+		6656283B28D9C7E80094E8F9 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6656283A28D9C7E80094E8F9 /* ProductsListViewController.swift */; };
 		66795CA128D0E5CB00C449CD /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66795CA028D0E5CB00C449CD /* Networking.swift */; };
-		66795CA328D0E75700C449CD /* MeliTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66795CA228D0E75700C449CD /* MeliTextField.swift */; };
-		66795CA528D0EC9600C449CD /* MeliProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66795CA428D0EC9600C449CD /* MeliProductCell.swift */; };
-		66795CA728D0EF2E00C449CD /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66795CA628D0EF2E00C449CD /* ProductsListViewController.swift */; };
 		66795CA928D0EF5100C449CD /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66795CA828D0EF5100C449CD /* ProductDetailViewController.swift */; };
 		66F7A5E228D2434200A1BC29 /* UnderConstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7A5E128D2434200A1BC29 /* UnderConstructionViewController.swift */; };
+		66FD5D1328D9136B00F478A0 /* NavBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD5D1228D9136B00F478A0 /* NavBarItems.swift */; };
+		66FD5D1728D9201B00F478A0 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD5D1628D9201B00F478A0 /* ProductTableViewCell.swift */; };
 		E7E8E7123F306EA3395F567B /* Pods_MELI_iOS_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E612E22BD5189DB19626B3D8 /* Pods_MELI_iOS_Challenge.framework */; };
 		EFE5952A24E78B17B9F3E238 /* Pods_MELI_iOS_Challenge_MELI_iOS_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE07A3D2A41B36E0145DDB7 /* Pods_MELI_iOS_Challenge_MELI_iOS_ChallengeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -62,12 +62,12 @@
 		6634477F28D096FB00135F28 /* MELI iOS ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MELI iOS ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6634478328D096FB00135F28 /* MELI_iOS_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELI_iOS_ChallengeUITests.swift; sourceTree = "<group>"; };
 		6634478528D096FB00135F28 /* MELI_iOS_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELI_iOS_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6656283A28D9C7E80094E8F9 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		66795CA028D0E5CB00C449CD /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		66795CA228D0E75700C449CD /* MeliTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliTextField.swift; sourceTree = "<group>"; };
-		66795CA428D0EC9600C449CD /* MeliProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliProductCell.swift; sourceTree = "<group>"; };
-		66795CA628D0EF2E00C449CD /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		66795CA828D0EF5100C449CD /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		66F7A5E128D2434200A1BC29 /* UnderConstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderConstructionViewController.swift; sourceTree = "<group>"; };
+		66FD5D1228D9136B00F478A0 /* NavBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarItems.swift; sourceTree = "<group>"; };
+		66FD5D1628D9201B00F478A0 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		6AC14692C069D9B51498150F /* Pods-MELI iOS Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELI iOS Challenge.release.xcconfig"; path = "Target Support Files/Pods-MELI iOS Challenge/Pods-MELI iOS Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		E612E22BD5189DB19626B3D8 /* Pods_MELI_iOS_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MELI_iOS_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F949A3936318B71A08BDCACD /* Pods-MELI iOS ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELI iOS ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-MELI iOS ChallengeTests/Pods-MELI iOS ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 			children = (
 				6634476D28D096FB00135F28 /* LaunchScreen.storyboard */,
 				6634476628D096F800135F28 /* HomeViewController.swift */,
-				66795CA628D0EF2E00C449CD /* ProductsListViewController.swift */,
+				6656283A28D9C7E80094E8F9 /* ProductsListViewController.swift */,
 				66795CA828D0EF5100C449CD /* ProductDetailViewController.swift */,
 				66F7A5E128D2434200A1BC29 /* UnderConstructionViewController.swift */,
 			);
@@ -183,8 +183,8 @@
 		6634479528D0AB2E00135F28 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				66795CA228D0E75700C449CD /* MeliTextField.swift */,
-				66795CA428D0EC9600C449CD /* MeliProductCell.swift */,
+				66FD5D1228D9136B00F478A0 /* NavBarItems.swift */,
+				66FD5D1628D9201B00F478A0 /* ProductTableViewCell.swift */,
 				6634476B28D096FB00135F28 /* Assets.xcassets */,
 			);
 			path = Components;
@@ -461,14 +461,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				66795CA928D0EF5100C449CD /* ProductDetailViewController.swift in Sources */,
-				66795CA528D0EC9600C449CD /* MeliProductCell.swift in Sources */,
-				66795CA328D0E75700C449CD /* MeliTextField.swift in Sources */,
 				6634476728D096F800135F28 /* HomeViewController.swift in Sources */,
-				66795CA728D0EF2E00C449CD /* ProductsListViewController.swift in Sources */,
+				6656283B28D9C7E80094E8F9 /* ProductsListViewController.swift in Sources */,
 				66F7A5E228D2434200A1BC29 /* UnderConstructionViewController.swift in Sources */,
 				6634476328D096F800135F28 /* AppDelegate.swift in Sources */,
 				6634476528D096F800135F28 /* SceneDelegate.swift in Sources */,
+				66FD5D1728D9201B00F478A0 /* ProductTableViewCell.swift in Sources */,
 				66795CA128D0E5CB00C449CD /* Networking.swift in Sources */,
+				66FD5D1328D9136B00F478A0 /* NavBarItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

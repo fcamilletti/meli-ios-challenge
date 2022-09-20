@@ -8,22 +8,51 @@
 import UIKit
 
 class UnderConstructionViewController: UIViewController {
+    
+    // MARK: - View Code
+    
+    private lazy var contentView: UIView = {
+        let aView = UIView()
+        aView.translatesAutoresizingMaskIntoConstraints = false
+        return aView
+    }()
+    
+    private lazy var underConstructionLabel: UILabel = {
+        let aLabel = UILabel()
+        aLabel.translatesAutoresizingMaskIntoConstraints = false
+        aLabel.text = "This site is under construction"
+        aLabel.textColor = .systemGray
+        aLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        return aLabel
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupView()
+        setupConstraints()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: - View Build
+    
+    private func setupView() {
+        self.view.addSubview(contentView)
+        self.view.addSubview(underConstructionLabel)
+        self.view.backgroundColor = .white
     }
-    */
+    
+    private func setupConstraints() {
+        NSLayoutConstraint.activate([
+            
+            contentView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            contentView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            contentView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            
+            underConstructionLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            underConstructionLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
+            
+        ])}
+    
+    // MARK: - Navigation
 
 }

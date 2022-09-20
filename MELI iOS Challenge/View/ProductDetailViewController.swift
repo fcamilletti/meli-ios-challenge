@@ -8,22 +8,55 @@
 import UIKit
 
 class ProductDetailViewController: UIViewController {
+    
+    private lazy var backButton: UIBarButtonItem = {
+        let aButton = UIBarButtonItem()
+        aButton.title = ""
+        aButton.tintColor = .black
+        aButton.style = .plain
+        return aButton
+    }()
+        
+    lazy var favButton: UIBarButtonItem = {
+        let aButton = UIBarButtonItem()
+        aButton.image = UIImage(systemName: "heart")
+        aButton.tintColor = .black
+        aButton.style = .plain
+        return aButton
+    }()
+    
+    lazy var searchButton: UIBarButtonItem = {
+        let aButton = UIBarButtonItem()
+        aButton.image = UIImage(systemName: "magnifyingglass")
+        aButton.tintColor = .black
+        aButton.style = .plain
+        return aButton
+    }()
+    
+    lazy var cartButton: UIBarButtonItem = {
+        let aButton = UIBarButtonItem()
+        aButton.image = UIImage(systemName: "cart")
+        aButton.tintColor = .black
+        aButton.style = .done
+        aButton.target = self
+        aButton.action = #selector(onCartBeenPressed)
+        return aButton
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupView() {
+        self.view.backgroundColor = .white
+        navigationItem.backBarButtonItem = backButton
+        navigationItem.rightBarButtonItem = cartButton
     }
-    */
+    
+    @objc private func onCartBeenPressed() {
+        let vc = UnderConstructionViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
