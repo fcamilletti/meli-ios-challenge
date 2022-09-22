@@ -29,7 +29,7 @@ class ProductDetailViewController: UIViewController {
         aLabel.translatesAutoresizingMaskIntoConstraints = false
         aLabel.text = "Usado"
         aLabel.textColor = .systemGray
-        aLabel.font = .systemFont(ofSize: 14)
+        aLabel.font = .systemFont(ofSize: 16)
         return aLabel
     }()
     
@@ -37,7 +37,7 @@ class ProductDetailViewController: UIViewController {
         let aLabel = UILabel()
         aLabel.translatesAutoresizingMaskIntoConstraints = false
         aLabel.text = "Volkswagen Gol Trend 1.6"
-        aLabel.font = .systemFont(ofSize: 20)
+        aLabel.font = .systemFont(ofSize: 22)
         return aLabel
     }()
     
@@ -46,7 +46,7 @@ class ProductDetailViewController: UIViewController {
         aLabel.translatesAutoresizingMaskIntoConstraints = false
         aLabel.text = "Vendedor con identidad verificada"
         aLabel.textColor = .systemGray
-        aLabel.font = .systemFont(ofSize: 12)
+        aLabel.font = .systemFont(ofSize: 14)
         return aLabel
     }()
     
@@ -63,7 +63,7 @@ class ProductDetailViewController: UIViewController {
         let aLabel = UILabel()
         aLabel.translatesAutoresizingMaskIntoConstraints = false
         aLabel.text = "$2.000.000"
-        aLabel.font = .systemFont(ofSize: 30)
+        aLabel.font = .systemFont(ofSize: 32)
         return aLabel
     }()
     
@@ -134,7 +134,7 @@ class ProductDetailViewController: UIViewController {
         
         """
         aLabel.textAlignment = .left
-        aLabel.font = .systemFont(ofSize: 16)
+        aLabel.font = .systemFont(ofSize: 18)
         aLabel.numberOfLines = 0
         return aLabel
     }()
@@ -198,19 +198,20 @@ class ProductDetailViewController: UIViewController {
             
             buyButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             buyButton.topAnchor.constraint(equalTo: productPrice.bottomAnchor, constant: 24),
-            buyButton.widthAnchor.constraint(equalToConstant: 167),
+            buyButton.trailingAnchor.constraint(equalTo: contentView.centerXAnchor, constant: -4),
             buyButton.heightAnchor.constraint(equalToConstant: 48),
             
-            callButton.leadingAnchor.constraint(equalTo: buyButton.trailingAnchor, constant: 9),
+            callButton.leadingAnchor.constraint(equalTo: contentView.centerXAnchor, constant: 4),
             callButton.topAnchor.constraint(equalTo: productPrice.bottomAnchor, constant: 24),
-            callButton.widthAnchor.constraint(equalToConstant: 167),
+            callButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             callButton.heightAnchor.constraint(equalToConstant: 48),
             
-            addToFavButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            addToFavButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 30),
             addToFavButton.topAnchor.constraint(equalTo: callButton.bottomAnchor, constant: 34),
             
-            shareButton.leadingAnchor.constraint(equalTo: addToFavButton.trailingAnchor, constant: 20),
+            shareButton.leadingAnchor.constraint(equalTo: contentView.centerXAnchor, constant: 5),
             shareButton.topAnchor.constraint(equalTo: callButton.bottomAnchor, constant: 34),
+            shareButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -25),
             
             productDescription.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             productDescription.topAnchor.constraint(equalTo: shareButton.bottomAnchor, constant: 58),

@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum APIManager {}
+
+extension APIManager {
+    enum ProductCategory { }
+    enum Product { }
+}

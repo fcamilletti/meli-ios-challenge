@@ -16,6 +16,9 @@
 		6634477A28D096FB00135F28 /* MELI_iOS_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634477928D096FB00135F28 /* MELI_iOS_ChallengeTests.swift */; };
 		6634478428D096FB00135F28 /* MELI_iOS_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634478328D096FB00135F28 /* MELI_iOS_ChallengeUITests.swift */; };
 		6634478628D096FB00135F28 /* MELI_iOS_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634478528D096FB00135F28 /* MELI_iOS_ChallengeUITestsLaunchTests.swift */; };
+		66455FAB28DC637100ED41F6 /* proximaNovaFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 66455FAA28DC637100ED41F6 /* proximaNovaFont.otf */; };
+		66455FAC28DC637100ED41F6 /* proximaNovaFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 66455FAA28DC637100ED41F6 /* proximaNovaFont.otf */; };
+		66455FAD28DC637100ED41F6 /* proximaNovaFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 66455FAA28DC637100ED41F6 /* proximaNovaFont.otf */; };
 		6656283B28D9C7E80094E8F9 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6656283A28D9C7E80094E8F9 /* ProductsListViewController.swift */; };
 		66795CA928D0EF5100C449CD /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66795CA828D0EF5100C449CD /* ProductDetailViewController.swift */; };
 		66E1FF2828DB4B3500FC322D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1FF2728DB4B3500FC322D /* Product.swift */; };
@@ -68,6 +71,7 @@
 		6634477F28D096FB00135F28 /* MELI iOS ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MELI iOS ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6634478328D096FB00135F28 /* MELI_iOS_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELI_iOS_ChallengeUITests.swift; sourceTree = "<group>"; };
 		6634478528D096FB00135F28 /* MELI_iOS_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELI_iOS_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66455FAA28DC637100ED41F6 /* proximaNovaFont.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = proximaNovaFont.otf; sourceTree = "<group>"; };
 		6656283A28D9C7E80094E8F9 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		66795CA828D0EF5100C449CD /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		66E1FF2728DB4B3500FC322D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -139,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				6634479628D0AB6700135F28 /* App */,
-				6634479428D0AB0C00135F28 /* View */,
 				6634477028D096FB00135F28 /* Info.plist */,
 			);
 			path = "MELI iOS Challenge";
@@ -171,13 +174,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		6634479428D0AB0C00135F28 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		6634479528D0AB2E00135F28 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +194,14 @@
 				66E1FF2C28DB4F3F00FC322D /* Modules */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		66455FA928DC635C00ED41F6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				66455FAA28DC637100ED41F6 /* proximaNovaFont.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		66E1FF2428DB4A7800FC322D /* Networking */ = {
@@ -224,8 +228,9 @@
 		66E1FF2628DB4A9900FC322D /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				66455FA928DC635C00ED41F6 /* Fonts */,
 			);
-			path = Repository;
+			name = Repository;
 			sourceTree = "<group>";
 		};
 		66E1FF2B28DB4E6000FC322D /* Shared */ = {
@@ -446,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6634476F28D096FB00135F28 /* LaunchScreen.storyboard in Resources */,
+				66455FAB28DC637100ED41F6 /* proximaNovaFont.otf in Resources */,
 				6634476C28D096FB00135F28 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +460,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66455FAC28DC637100ED41F6 /* proximaNovaFont.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +468,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66455FAD28DC637100ED41F6 /* proximaNovaFont.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

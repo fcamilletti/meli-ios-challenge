@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         self.window = window
         window.makeKeyAndVisible()
-        addAsRoot(ProductsListViewController())
+        addAsRoot(HomeViewController())
     }
     
     private func addAsRoot(_ controller: UIViewController) {

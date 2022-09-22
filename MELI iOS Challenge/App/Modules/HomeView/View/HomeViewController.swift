@@ -61,6 +61,8 @@ class HomeViewController: UIViewController, UISearchResultsUpdating {
         navigationItem.backBarButtonItem = customNavBar.backButton
         navigationItem.titleView = customNavBar.searchBar
         navigationItem.rightBarButtonItem = customNavBar.cartButton
+        customNavBar.cartButton.target = self
+        customNavBar.cartButton.action = #selector(onCartBeenPressed)
     }
     
     //MARK: - Search Controller
@@ -77,6 +79,11 @@ class HomeViewController: UIViewController, UISearchResultsUpdating {
     }
     
     //MARK: - Interactions
+    
+    @objc private func onCartBeenPressed() {
+        let vc = ProductsListViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
 }
 

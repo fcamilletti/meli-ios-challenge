@@ -8,9 +8,11 @@
 import Foundation
 
 enum Request {
-    static var baseURL : String { return "http://www.boredapi.com/api/" }
+    static var categoriesURL : String { return "http://www.boredapi.com/api/" }
+    static var productURL : String { return "" }
 }
 
 extension Request {
+    enum ProductCategory { }
     enum Product { }
 }
