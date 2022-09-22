@@ -7,11 +7,13 @@
 
 import Foundation
 
-struct Product : Codable {
-    let name: String
-    let imageURL: String
-    let location: String
-    let price: String
-    let description: String
+class Product : Codable {
+    var body: ItemBody
 }
 
+struct ItemBody: Codable {
+    let id: String
+    let title: String
+    let secure_thumbnail: String
+    let price: Double
+}

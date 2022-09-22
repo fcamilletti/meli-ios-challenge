@@ -7,6 +7,18 @@
 
 import Foundation
 
-struct ProductCategory : Codable {
-    let name: String
+class ProductCategory: Codable {
+    var content: [Content]
 }
+
+struct Content : Codable {
+    let id: String
+    let position: Int
+    let type: String
+}
+
+struct TopProductsError: Codable {
+    let error: String
+    let message: String
+}
+

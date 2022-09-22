@@ -23,6 +23,7 @@ class ProductTableViewCell: UITableViewCell {
         let aLabel = UILabel()
         aLabel.translatesAutoresizingMaskIntoConstraints = false
         aLabel.font = .systemFont(ofSize: 16)
+        aLabel.numberOfLines = 0
         return aLabel
     }()
     
@@ -44,7 +45,7 @@ class ProductTableViewCell: UITableViewCell {
     }
     
     public func configure(imageName: String, text: String, price: String) {
-        productImage.image = UIImage(named: imageName)
+        productImage.loadFrom(URLAddress: imageName)
         productName.text = text
         productPrice.text = price
     }
@@ -75,10 +76,10 @@ class ProductTableViewCell: UITableViewCell {
         productName.frame = CGRect(x: 160,
                                     y: 15,
                                     width: 200,
-                                    height: 25)
+                                    height: 50)
         
         productPrice.frame = CGRect(x: 160,
-                                    y: 45,
+                                    y: 70,
                                     width: 200,
                                     height: 25)
         
