@@ -22,7 +22,7 @@ class ProductTableViewCell: UITableViewCell {
     private lazy var productName: UILabel = {
         let aLabel = UILabel()
         aLabel.translatesAutoresizingMaskIntoConstraints = false
-        aLabel.font = .systemFont(ofSize: 14)
+        aLabel.font = .systemFont(ofSize: 16)
         return aLabel
     }()
     
@@ -30,7 +30,7 @@ class ProductTableViewCell: UITableViewCell {
         let aLabel = UILabel()
         aLabel.translatesAutoresizingMaskIntoConstraints = false
         aLabel.text = "$20000"
-        aLabel.font = .systemFont(ofSize: 26)
+        aLabel.font = .systemFont(ofSize: 28)
         return aLabel
     }()
     
@@ -69,18 +69,18 @@ class ProductTableViewCell: UITableViewCell {
         
         productImage.frame = CGRect(x: 5,
                                     y: 5,
-                                    width: 100,
-                                    height: 90)
+                                    width: 150,
+                                    height: 140)
         
-        productName.frame = CGRect(x: 110,
-                                    y: 10,
+        productName.frame = CGRect(x: 160,
+                                    y: 15,
                                     width: 200,
-                                    height: 20)
+                                    height: 25)
         
-        productPrice.frame = CGRect(x: 110,
-                                    y: 40,
+        productPrice.frame = CGRect(x: 160,
+                                    y: 45,
                                     width: 200,
-                                    height: 20)
+                                    height: 25)
         
     }
 }
