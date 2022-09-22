@@ -10,6 +10,14 @@ import PaddingLabel
 
 class ProductDetailViewController: UIViewController {
     
+    var product: Product? {
+        didSet {
+            productName.text = product!.body.title
+            productImage.loadFrom(URLAddress: product!.body.secure_thumbnail)
+            productPrice.text = NumberFormatter.localizedString(from: NSNumber(value: product!.body.price), number: .currency)
+        }
+    }
+    
     // MARK: - View Code
     
     private lazy var scrollView: UIScrollView = {
@@ -27,7 +35,7 @@ class ProductDetailViewController: UIViewController {
     private lazy var productStatus: UILabel = {
         let aLabel = UILabel()
         aLabel.translatesAutoresizingMaskIntoConstraints = false
-        aLabel.text = "Usado"
+        aLabel.text = "Nuevo"
         aLabel.textColor = .systemGray
         aLabel.font = .systemFont(ofSize: 16)
         return aLabel
@@ -36,8 +44,8 @@ class ProductDetailViewController: UIViewController {
     private lazy var productName: UILabel = {
         let aLabel = UILabel()
         aLabel.translatesAutoresizingMaskIntoConstraints = false
-        aLabel.text = "Volkswagen Gol Trend 1.6"
         aLabel.font = .systemFont(ofSize: 22)
+        aLabel.numberOfLines = 0
         return aLabel
     }()
     
@@ -53,7 +61,6 @@ class ProductDetailViewController: UIViewController {
     private lazy var productImage: UIImageView = {
         let aImage = UIImageView()
         aImage.translatesAutoresizingMaskIntoConstraints = false
-        aImage.image = UIImage(named: "auto1")
         aImage.contentMode = .scaleAspectFit
         aImage.clipsToBounds = true
         return aImage
@@ -62,7 +69,6 @@ class ProductDetailViewController: UIViewController {
     private lazy var productPrice: UILabel = {
         let aLabel = UILabel()
         aLabel.translatesAutoresizingMaskIntoConstraints = false
-        aLabel.text = "$2.000.000"
         aLabel.font = .systemFont(ofSize: 32)
         return aLabel
     }()
@@ -184,6 +190,8 @@ class ProductDetailViewController: UIViewController {
 
             productName.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             productName.topAnchor.constraint(equalTo: productStatus.bottomAnchor, constant: 8),
+            productName.heightAnchor.constraint(equalToConstant: 60),
+            productName.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             
             sellerIdentity.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             sellerIdentity.topAnchor.constraint(equalTo: productName.bottomAnchor, constant: 8),

@@ -9,7 +9,6 @@ import UIKit
 
 class CustomNavBar: UIViewController, UISearchBarDelegate {
     
-    
     lazy var sendLabel: UILabel = {
         let aLabel = UILabel()
         aLabel.text = "Enviar a Franco Camilletti - Garibaldi 619"
@@ -30,6 +29,7 @@ class CustomNavBar: UIViewController, UISearchBarDelegate {
         aSearchBar.delegate = self
         aSearchBar.searchTextField.backgroundColor = .white
         aSearchBar.placeholder = "Buscar en Mercado Libre"
+        aSearchBar.tintColor = .black
         aSearchBar.layer.cornerRadius = 20
         aSearchBar.layer.shadowColor = UIColor.black.cgColor
         aSearchBar.layer.shadowOpacity = 0.25

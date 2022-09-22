@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UISearchResultsUpdating {
+class HomeViewController: UIViewController {
     
     // MARK: - View Code
     
@@ -58,32 +58,51 @@ class HomeViewController: UIViewController, UISearchResultsUpdating {
     
     private func setupNavBar() {
         let customNavBar = CustomNavBar()
-        navigationItem.backBarButtonItem = customNavBar.backButton
-        navigationItem.titleView = customNavBar.searchBar
+        let customBack = customNavBar.backButton
+        let customSearchBar = customNavBar.searchBar
+        let customCart = customNavBar.cartButton
+        navigationItem.backBarButtonItem = customBack
+        navigationItem.titleView = customSearchBar
+        customSearchBar.delegate = self
         navigationItem.rightBarButtonItem = customNavBar.cartButton
-        customNavBar.cartButton.target = self
-        customNavBar.cartButton.action = #selector(onCartBeenPressed)
+        customCart.target = self
+        customCart.action = #selector(onCartBeenPressed)
     }
     
-    //MARK: - Search Controller
-    
-    func updateSearchResults(for searchController: UISearchController) {
-        guard let text = searchController.searchBar.text else {
-            return
-        }
-        print(text)
-    }
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print("Text Did Change to:", searchText)
-    }
     
     //MARK: - Interactions
     
     @objc private func onCartBeenPressed() {
-        let vc = ProductsListViewController()
+        let vc = UnderConstructionViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
     
+}
+
+//MARK: - Search
+
+extension HomeViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchBar.text else { return }
+        let vc = ProductsListViewController()
+        vc.searchText = text
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.searchTextField.text = ""
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = true
+        searchBar.showsCancelButton = false
+        searchBar.becomeFirstResponder()
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
+    }
 }
 
