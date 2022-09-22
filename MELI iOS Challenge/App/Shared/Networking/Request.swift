@@ -8,7 +8,7 @@
 import Foundation
 
 enum Request {
-    static var categoriesURL : String { return "http://www.boredapi.com/api/" }
+    static var categoriesURL : String { return "https://api.mercadolibre.com/sites/MLA/domain_discovery/search?" }
     static var productURL : String { return "" }
 }
 

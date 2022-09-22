@@ -20,7 +20,7 @@ class UnderConstructionViewController: UIViewController {
     private lazy var underConstructionLabel: UILabel = {
         let aLabel = UILabel()
         aLabel.translatesAutoresizingMaskIntoConstraints = false
-        aLabel.text = "This site is under construction"
+        aLabel.text = "Este sitio no se encuentra disponible"
         aLabel.textColor = .systemGray
         aLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         return aLabel

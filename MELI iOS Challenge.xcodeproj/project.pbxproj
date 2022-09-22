@@ -177,6 +177,7 @@
 		6634479528D0AB2E00135F28 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				66455FA928DC635C00ED41F6 /* Fonts */,
 				66FD5D1228D9136B00F478A0 /* CustomNavBar.swift */,
 				66FD5D1628D9201B00F478A0 /* ProductTableViewCell.swift */,
 				6634476B28D096FB00135F28 /* Assets.xcassets */,
@@ -201,7 +202,7 @@
 			children = (
 				66455FAA28DC637100ED41F6 /* proximaNovaFont.otf */,
 			);
-			name = Fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		66E1FF2428DB4A7800FC322D /* Networking */ = {
@@ -228,7 +229,6 @@
 		66E1FF2628DB4A9900FC322D /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				66455FA928DC635C00ED41F6 /* Fonts */,
 			);
 			name = Repository;
 			sourceTree = "<group>";

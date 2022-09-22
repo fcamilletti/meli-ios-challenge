@@ -61,7 +61,6 @@ class ProductsListViewController: UIViewController, UISearchBarDelegate, UITable
         let vc = ProductDetailViewController()
         productsTableView.deselectRow(at: indexPath, animated: true)
         navigationController?.pushViewController(vc, animated: true)
-        print("cell tapped")
     }
     
     //MARK: - Interactions
