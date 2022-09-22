@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-MELI iOS Challenge-MELI iOS ChallengeUITests/Pods-MELI iOS Challenge-MELI iOS ChallengeUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/PaddingLabel/PaddingLabel.framework

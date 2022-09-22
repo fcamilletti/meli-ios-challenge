@@ -7,6 +7,7 @@ target 'MELI iOS Challenge' do
 
   # Pods for MELI iOS Challenge
   pod 'Alamofire'
+  pod 'PaddingLabel', '1.2'
 
   target 'MELI iOS ChallengeTests' do
     inherit! :search_paths

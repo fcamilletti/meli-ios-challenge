@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         self.window = window
         window.makeKeyAndVisible()
-        addAsRoot(HomeViewController())
+        addAsRoot(ProductsListViewController())
     }
     
     private func addAsRoot(_ controller: UIViewController) {
@@ -32,9 +32,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         appearance.standardAppearance = navBarAppearance
         appearance.compactAppearance = navBarAppearance
         appearance.scrollEdgeAppearance = navBarAppearance
-        
-        //Este cambio de flecha todavia no funciona
-        
         appearance.backIndicatorImage = UIImage(systemName: "arrow.backward")
         appearance.backIndicatorTransitionMaskImage = UIImage(systemName: "arrow.backward")
         if #available(iOS 15.0, *) {

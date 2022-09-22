@@ -35,9 +35,9 @@ class UnderConstructionViewController: UIViewController {
     //MARK: - View Build
     
     private func setupView() {
+        self.view.backgroundColor = .white
         self.view.addSubview(contentView)
         self.view.addSubview(underConstructionLabel)
-        self.view.backgroundColor = .white
     }
     
     private func setupConstraints() {
